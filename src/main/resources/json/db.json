@@ -1,0 +1,40 @@
+[
+  {
+    "name": "Consumer goods" ,"_id":"",
+    "children": [
+      {
+        "name": "Electronics",
+        "children": [
+          {
+            "name": "Audio",
+            "children": []
+          },
+          {
+            "name": "TV",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "moto&auto",
+        "children": []
+      },
+      {
+        "name": "home&garden",
+        "children": []
+      }
+    ]
+  },
+  {
+    "name": "Busines",
+    "children": []
+  },
+  {
+    "name": "Services",
+    "children": []
+  },
+  {
+    "name": "Adverts",
+    "children": []
+  }
+]
