@@ -1,9 +1,11 @@
 package com.eshop.store.entities.db;
 
 import lombok.*;
+import org.joda.money.Money;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import java.util.List;
 import java.util.Map;
 
 @Getter
@@ -17,6 +19,11 @@ public class Product {
     @Id
     private String id;
 
-    private Map<String, String> description;
+    private Map<String, String> shortDescription;
+    private Map<String, String> fullDescription;
+    private List<ProductImage> imagesList;
+    private Map<String, ProductCharacteristic> characteristics;
+    private ProductTag tags;
+    private Money price;
 
 }

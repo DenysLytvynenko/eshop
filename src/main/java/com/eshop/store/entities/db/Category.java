@@ -19,6 +19,6 @@ public class Category {
     private String id;
 
     private Map<String, String> description;
-    private String parent_id;
+    private String parentId;
     private List<String> path;
 }

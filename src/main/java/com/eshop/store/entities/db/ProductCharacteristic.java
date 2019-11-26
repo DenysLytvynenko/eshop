@@ -18,5 +18,5 @@ public class ProductCharacteristic {
     private String id;
 
     private Map<String, String> description;
-    private String category_id;
+    private String categoryId;
 }
