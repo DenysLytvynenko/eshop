@@ -21,9 +21,9 @@ public class Product {
 
     private Map<String, String> shortDescription;
     private Map<String, String> fullDescription;
-    private List<ProductImage> imagesList;
-    private Map<String, ProductCharacteristic> characteristics;
-    private ProductTag tags;
+    private List<String> imagesList;
+    private Map<String, String> characteristics;
+    private List<String> tags;
     private Money price;
 
 }
