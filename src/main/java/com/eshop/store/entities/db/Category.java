@@ -18,7 +18,7 @@ public class Category {
     @Id
     private String id;
 
-    private Map<String, String> locale;
+    private Map<String, String> description;
     private String parent_id;
     private List<String> path;
 }

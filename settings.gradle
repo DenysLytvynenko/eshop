@@ -11,4 +11,20 @@ pluginManagement {
 		}
 	}
 }
-rootProject.name = 'store'
+bootJar {
+	baseName = 'gs-serving-web-content'
+	version =  '0.1.0'
+}
+repositories {
+	mavenCentral()
+}
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+dependencies {
+	compile 'org.joda:joda-money:1.0.2-SNAPSHOT'
+}
+
+/*
+rootProject.name = 'store'*/

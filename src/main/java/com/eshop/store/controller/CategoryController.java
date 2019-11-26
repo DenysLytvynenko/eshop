@@ -14,8 +14,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.PostConstruct;
 
-import java.lang.invoke.StringConcatException;
-
 import static com.eshop.store.entities.web.WebResult.EXCEPTION_WEB_CODE;
 import static com.eshop.store.entities.web.WebResult.OK_WEB_CODE;
 
