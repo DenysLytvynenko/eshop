@@ -1,6 +1,6 @@
 package com.eshop.store.controller.testgui;
 
-import com.eshop.store.entities.User;
+import com.eshop.store.entities.db.User;
 import com.eshop.store.repo.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

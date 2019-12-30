@@ -37,4 +37,11 @@ export default {
 
     // Page upload
     'app.upload.input.message': 'Load image',
+    'header.callUs':'Call Us',
+    'header.phone':'+7-917-839-40-95',
+    'header.myAccount':'My Account',
+    'header.wishList':'Wish List',
+    'header.checkout':'Checkout',
+    'header2.logo':'LOGO',
+    'header2.userInfo':'SOME USER INFO',
 };
