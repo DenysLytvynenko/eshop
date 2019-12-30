@@ -11,4 +11,5 @@ pluginManagement {
 		}
 	}
 }
-rootProject.name = 'store'
+/*
+rootProject.name = 'store'*/
