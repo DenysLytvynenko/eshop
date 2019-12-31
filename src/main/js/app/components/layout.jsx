@@ -2,15 +2,16 @@ import React, {useState} from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import {
     Button,
-    Nav,Navbar,NavbarBrand,NavItem,NavLink,
+    Nav, Navbar, NavbarBrand, NavItem, NavLink,
     Dropdown, DropdownToggle, DropdownMenu, DropdownItem, UncontrolledDropdown,
     FormGroup, Input
 } from 'reactstrap';
 import Locale from 'app/components/locale';
 import {FormattedMessage} from 'react-intl';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPhone, faDrumstickBite } from '@fortawesome/free-solid-svg-icons'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {faPhone, faDrumstickBite, faShoppingCart} from '@fortawesome/free-solid-svg-icons'
+import 'app/css/header.css'
 
 import * as routers from 'app/constants/routes'
 import ApplicationRouter from 'app/router/routerSwitch';
@@ -21,10 +22,10 @@ export default function IndexLayout(props) {
         <div>
             <Navbar color='secondary' expand='lg'>
                 <div className="container">
-                    <FontAwesomeIcon icon={faPhone} />
+                    <FontAwesomeIcon icon={faPhone}/>
                     <FormattedMessage id='header.callUs'/>
-                    <FormattedMessage id='header.phone' />
-                    <UncontrolledDropdown size="sm" >
+                    <FormattedMessage id='header.phone'/>
+                    <UncontrolledDropdown size="sm">
                         <DropdownToggle caret>BGN</DropdownToggle>
                         <DropdownMenu>
                             <DropdownItem>BGN</DropdownItem>
@@ -66,16 +67,38 @@ export default function IndexLayout(props) {
             </Navbar>
             <Navbar color='light' expand='lg'>
                 <div className="container">
-                    <FontAwesomeIcon icon={faDrumstickBite} size="lg" className="col-1"/>
-                    <h2 className="mr-auto col-2"><FormattedMessage id='header2.logo'/></h2>
-                    <Input type="select" name="select" id="exampleSelect" className="ml-auto justify-content-center col-2">
-                        <option>All Type</option>
-                        <option>Special</option>
-                        <option>Only Best</option>
-                        <option>Latest</option>
-                    </Input>
-                    <Input type="search" name="search" id="exampleSearch" placeholder="Search" className="justify-content-center col-4"/>
-                    <h2 className="mr-auto col-3"><FormattedMessage id='header2.userInfo'/></h2>
+                    <div className="row align-items-center w-100">
+                        <div id="logoDiv" className="col-2 justify-content-start">
+                            <FontAwesomeIcon icon={faDrumstickBite} className="logo" size="2x"/>
+                            <h2 className="logo"><FormattedMessage id='header2.logo'/></h2>
+                        </div>
+                        <div id="searchDiv" className="ml-auto justify-content-center col-7 input-group w-100 row">
+                            <Input type="select" name="select" id="exampleSelect" className="col-3 custom-select">
+                                <option>All Type</option>
+                                <option>Special</option>
+                                <option>Only Best</option>
+                                <option>Latest</option>
+                            </Input>
+                            <Input type="search" name="search" id="exampleSearch" placeholder="Search"
+                                   className="justify-content-center col-7"/>
+                        </div>
+                        <div id="userDiv" className="justify-content-end col-3">
+                            <div id="signInRegister" className="logo col-8">
+                                <small className="justify-content-center text-muted col-8">Welcome guest!</small>
+                                <div id="userButtonsDiv">
+                                    <a href="#" className="logo col-7"><FormattedMessage id='header2.signIn' className="justify-content-end"/></a>
+                                    <a href="#" className="logo col-5"><FormattedMessage id='header2.register' className="justify-content-end"/></a>
+                                </div>
+                            </div>
+                            <div id="cartDiv" className="logo col-4">
+                                <a href="#">
+                                    <div className="rounded-circle rounded-lg border icontext">
+                                        <FontAwesomeIcon icon={faShoppingCart} className="" size="2x"/>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </Navbar>
             <ApplicationRouter/>

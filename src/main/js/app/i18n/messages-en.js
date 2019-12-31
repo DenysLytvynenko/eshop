@@ -43,5 +43,8 @@ export default {
     'header.wishList':'Wish List',
     'header.checkout':'Checkout',
     'header2.logo':'LOGO',
-    'header2.userInfo':'SOME USER INFO',
+    'header2.userInfo':'SOME USER',
+    'header2.welcomeGuest':'Welcome guest!',
+    'header2.signIn':'Sign In',
+    'header2.register':'Register',
 };
